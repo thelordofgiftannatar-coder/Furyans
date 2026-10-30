@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <application android:label="VALIRYAN FREEHOLD" android:icon="@android:drawable/sym_def_app_icon"
+        android:usesCleartextTraffic="true" android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".MainActivity" android:exported="true" android:configChanges="orientation|screenSize|keyboardHidden">
+            <intent-filter><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/></intent-filter>
+            <intent-filter><action android:name="android.intent.action.VIEW"/><category android:name="android.intent.category.DEFAULT"/><category android:name="android.intent.category.BROWSABLE"/><data android:scheme="https"/><data android:scheme="http"/></intent-filter>
+        </activity>
+        <activity android:name=".PlayerActivity" android:configChanges="orientation|screenSize|keyboardHidden"/>
+        <activity android:name=".LibraryActivity"/>
+    </application>
+</manifest>
